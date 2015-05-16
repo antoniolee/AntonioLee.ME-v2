@@ -1,0 +1,144 @@
+// Colors
+$dark-gray: #1A1A1A;
+$light-gray: #B1B1B1;
+$white: #E6E6E6;
+$green: #92FF6E;
+$blue: #32CFE0;
+$orange: #DD9833;
+
+/* Fonts
+font-family: 'Palanquin', sans-serif;
+font-family: 'Istok Web', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+// Case Study Container
+.study-container {
+//    padding: 0;
+ //   position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2C4770;
+
+    .center {
+        position: absolute;           
+        top: 50%;                         
+        transform: translate(0, -50%);   
+    }
+}
+
+// Home Page Content
+.study-content {   
+    margin: auto;
+    width: 550px;
+
+// Header Settings
+    h1 {
+        font-size: 4.5em;
+        color: $white;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+// Paragraph Settings
+    p {
+        font-family: 'Palanquin', sans-serif;
+        font-size: 1.66rem;
+        font-weight: 200;
+    }
+
+// pronounication spell out
+    p.pronounce {
+        color: $light-gray;
+    }
+
+// the descriptor (verb, noun, adj.)
+    p.verb {
+        color: $light-gray;
+        font-style: italic;
+    }
+
+// description settings
+    .description {
+        color:$white;
+    }
+
+// paragraph description
+    p.description {
+        position: relative;
+    }
+
+// the number description
+    span.description {
+        position: relative;
+        float: left;
+        left: -25px;
+    }
+
+// Skills, Tools, etc.
+    .skills-header {
+        margin-top:25px;
+        color: $light-gray;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+
+    .skills{
+        padding-top: 10px;
+
+        p {
+          float: left;
+          border-style: solid;
+          border-radius: 25px;
+          padding: 5px;
+          margin-right: 5px;
+          font-size: 12px;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 300;
+          color: $light-gray;
+        }
+
+    }
+
+    .green {
+        border-color: $green;
+        border-width: 2px;
+    }
+
+    .blue {
+        border-color: $blue;
+        border-width: 2px;
+        min-width: 50px;
+
+    }
+
+    .orange {
+        border-color: $orange;
+        border-width: 2px;
+        min-width: 50px;
+    }
+
+}
+
+// Media Queries
+
+@media (max-width: 768px) {
+
+.study-content {
+
+    top: -25%;
+    left: 10px;
+
+// Header Settings
+    h1 {
+        font-size: 2.75em;
+    }
+
+// Paragraph Settings 
+    p {
+        font-size: 1.5rem;
+    }    
+}
+}
+

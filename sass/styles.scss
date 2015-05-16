@@ -1,0 +1,47 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+
+/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED   
+* {
+   border: 1px solid red !important;
+}
+*/
+
+// @import "compass/reset";
+@import "page-transitions";
+@import "home";
+@import "works";
+@import "case-study";
+@import "blog";
+
+
+// Page Settings
+.page {
+	position:absolute;
+}
+
+// Page Specific Settings
+.page-home { background-color: #E7E7E7; width: 100vw}
+.page-contact { background-color: #66DF4C; height: 400vh; width: 100vw;}
+.page-about { background-color: #506AC0; height: 400vh; width: 100vw;}
+
+// Default Nav Bar
+.nav {
+    width: 100%;
+    $fontsize: 1.75rem;
+    padding: 25px 25px 0px;
+
+    ul > li {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        display: inline;
+        font-size: $fontsize;
+        margin-left: 3rem;
+        color: $white;
+    }
+}
+
+
+

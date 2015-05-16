@@ -1,0 +1,147 @@
+// Colors
+$dark-gray: #1A1A1A;
+$light-gray: #B1B1B1;
+$white: #E6E6E6;
+$green: #92FF6E;
+$blue: #32CFE0;
+$orange: #DD9833;
+
+/* Fonts
+font-family: 'Palanquin', sans-serif;
+font-family: 'Istok Web', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+// Home Page Container
+.home-container {
+    position: relative;
+    min-height: 920px;
+    height: 100vh;
+    width: 100vw;
+    background-color: $dark-gray;
+}
+
+// Home Page Content
+.home-content {
+    min-width: 350px;
+    max-width: 700px;
+    height: 50%; /* Set your own height: percents, ems, whatever! */
+    width: 50%; /* Set your own width: percents, ems, whatever! */
+    margin: auto; /* Center the item vertically & horizontally */
+    position: absolute; /* Break it out of the regular flow */
+    top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
+
+// Header Settings
+    h1 {
+        font-size: 4.5em;
+        color: $white;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+// Paragraph Settings
+    p {
+        font-family: 'Palanquin', sans-serif;
+        font-size: 1.66rem;
+        font-weight: 200;
+    }
+
+// pronounication spell out
+    p.pronounce {
+        color: $light-gray;
+    }
+
+// the descriptor (verb, noun, adj.)
+    p.verb {
+        color: $light-gray;
+        font-style: italic;
+    }
+
+// description settings
+    .description {
+        color:$white;
+    }
+
+// paragraph description
+    p.description {
+        position: relative;
+    }
+
+// the number description
+    span.description {
+        position: absolute;
+        float: left;
+        left: -25px;
+    }
+
+// Skills, Tools, etc.
+    .skills-header {
+        margin-top:25px;
+        color: $light-gray;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+
+    .skills{
+        padding-top: 10px;
+        overflow:hidden;
+
+        p {
+          float: left;
+          border-style: solid;
+          border-radius: 25px;
+          padding: 5px;
+          margin-right: 5px;
+          font-size: 12px;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 300;
+          color: $light-gray;
+        }
+
+    }
+
+    .green {
+        border-color: $green;
+        border-width: 2px;
+    }
+
+    .blue {
+        border-color: $blue;
+        border-width: 2px;
+        min-width: 50px;
+
+    }
+
+    .orange {
+        border-color: $orange;
+        border-width: 2px;
+        min-width: 50px;
+    }
+
+}
+
+// Media Queries
+@media (max-width: 500px) {
+    .home-container {
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    // Home Page Content
+    .home-content {
+
+    // Header Settings
+        h1 {
+            font-size: 2.75em;
+        }
+
+    // Paragraph Settings 
+        p {
+            font-size: 1.5rem;
+        }    
+    }
+}
+
