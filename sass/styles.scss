@@ -3,11 +3,12 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 
-/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED   
+/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED   */
 * {
    border: 1px solid red !important;
 }
-*/
+
+
 
 // @import "compass/reset";
 @import "page-transitions";
@@ -27,6 +28,7 @@
 .page-contact { background-color: #66DF4C; height: 400vh; width: 100vw;}
 .page-about { background-color: #506AC0; height: 400vh; width: 100vw;}
 
+
 // Default Nav Bar
 .nav {
     width: 100%;
@@ -42,6 +44,4 @@
         color: $white;
     }
 }
-
-
 

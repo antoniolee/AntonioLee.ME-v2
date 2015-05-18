@@ -3,11 +3,12 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 
-/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED   
+/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED   */
+/* line 7, ../sass/styles.scss */
 * {
-   border: 1px solid red !important;
+  border: 1px solid red !important;
 }
-*/
+
 /* Page Transition Effects */
 /* line 3, ../sass/_page-transitions.scss */
 .page.ng-leave {
@@ -70,7 +71,7 @@ font-family: 'Open Sans', sans-serif;
 /* line 17, ../sass/_home.scss */
 .home-container {
   position: relative;
-  min-height: 920px;
+  min-height: 700px;
   height: 100vh;
   width: 100vw;
   background-color: #1A1A1A;
@@ -78,7 +79,7 @@ font-family: 'Open Sans', sans-serif;
 
 /* line 26, ../sass/_home.scss */
 .home-content {
-  min-width: 350px;
+  min-width: 300px;
   max-width: 700px;
   height: 50%;
   /* Set your own height: percents, ems, whatever! */
@@ -94,42 +95,42 @@ font-family: 'Open Sans', sans-serif;
   right: 0;
   /* Set the bounds in which to center it, relative to its parent/container */
 }
-/* line 36, ../sass/_home.scss */
+/* line 37, ../sass/_home.scss */
 .home-content h1 {
   font-size: 4.5em;
   color: #E6E6E6;
   font-family: 'Istok Web', sans-serif;
 }
-/* line 43, ../sass/_home.scss */
+/* line 44, ../sass/_home.scss */
 .home-content p {
   font-family: 'Palanquin', sans-serif;
   font-size: 1.66rem;
   font-weight: 200;
 }
-/* line 50, ../sass/_home.scss */
+/* line 51, ../sass/_home.scss */
 .home-content p.pronounce {
   color: #B1B1B1;
 }
-/* line 55, ../sass/_home.scss */
+/* line 56, ../sass/_home.scss */
 .home-content p.verb {
   color: #B1B1B1;
   font-style: italic;
 }
-/* line 61, ../sass/_home.scss */
+/* line 62, ../sass/_home.scss */
 .home-content .description {
   color: #E6E6E6;
 }
-/* line 66, ../sass/_home.scss */
+/* line 67, ../sass/_home.scss */
 .home-content p.description {
   position: relative;
 }
-/* line 71, ../sass/_home.scss */
+/* line 72, ../sass/_home.scss */
 .home-content span.description {
   position: absolute;
   float: left;
   left: -25px;
 }
-/* line 78, ../sass/_home.scss */
+/* line 79, ../sass/_home.scss */
 .home-content .skills-header {
   margin-top: 25px;
   color: #B1B1B1;
@@ -137,12 +138,12 @@ font-family: 'Open Sans', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-/* line 86, ../sass/_home.scss */
+/* line 87, ../sass/_home.scss */
 .home-content .skills {
   padding-top: 10px;
   overflow: hidden;
 }
-/* line 90, ../sass/_home.scss */
+/* line 91, ../sass/_home.scss */
 .home-content .skills p {
   float: left;
   border-style: solid;
@@ -154,18 +155,18 @@ font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #B1B1B1;
 }
-/* line 104, ../sass/_home.scss */
+/* line 105, ../sass/_home.scss */
 .home-content .green {
   border-color: #92FF6E;
   border-width: 2px;
 }
-/* line 109, ../sass/_home.scss */
+/* line 110, ../sass/_home.scss */
 .home-content .blue {
   border-color: #32CFE0;
   border-width: 2px;
   min-width: 50px;
 }
-/* line 116, ../sass/_home.scss */
+/* line 117, ../sass/_home.scss */
 .home-content .orange {
   border-color: #DD9833;
   border-width: 2px;
@@ -173,11 +174,15 @@ font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 768px) {
-  /* line 137, ../sass/_home.scss */
+  /* line 135, ../sass/_home.scss */
+  .home-content {
+    top: -20%;
+  }
+  /* line 139, ../sass/_home.scss */
   .home-content h1 {
     font-size: 2.75em;
   }
-  /* line 142, ../sass/_home.scss */
+  /* line 144, ../sass/_home.scss */
   .home-content p {
     font-size: 1.5rem;
   }
@@ -188,28 +193,28 @@ font-family: 'Istok Web', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Rozha One', serif;
 */
-/* line 18, ../sass/_works.scss */
+/* line 24, ../sass/_works.scss */
 .works-container {
   position: relative;
   width: 100vw;
   background-color: #1A1A1A;
 }
 
-/* line 26, ../sass/_works.scss */
+/* line 32, ../sass/_works.scss */
 .works-header {
   text-align: center;
 }
-/* line 30, ../sass/_works.scss */
+/* line 36, ../sass/_works.scss */
 .works-header p {
   font-family: 'Palanquin', sans-serif;
   font-weight: 100;
   color: #E6E6E6;
 }
-/* line 36, ../sass/_works.scss */
+/* line 42, ../sass/_works.scss */
 .works-header p.header {
   font-size: 2.25rem;
 }
-/* line 40, ../sass/_works.scss */
+/* line 46, ../sass/_works.scss */
 .works-header p.pronounce {
   position: relative;
   top: -5px;
@@ -217,13 +222,13 @@ font-family: 'Rozha One', serif;
   color: #B1B1B1;
 }
 
-/* line 49, ../sass/_works.scss */
+/* line 55, ../sass/_works.scss */
 .works-content {
   text-align: center;
   padding: 0;
 }
 
-/* line 54, ../sass/_works.scss */
+/* line 60, ../sass/_works.scss */
 .tile {
   display: inline-block;
   width: 400px;
@@ -231,12 +236,13 @@ font-family: 'Rozha One', serif;
   margin: 20px;
   transition: .5s ease;
 }
-/* line 61, ../sass/_works.scss */
-.tile:hover {
+/* line 17, ../sass/_works.scss */
+.tile:hover, .tile:focus, .tile:active {
   background-color: #32CFE0;
   transform: scale(1.03);
+  transition: .5s ease;
 }
-/* line 66, ../sass/_works.scss */
+/* line 73, ../sass/_works.scss */
 .tile p {
   font-family: 'Rozha One', serif;
   position: absolute;
@@ -247,29 +253,25 @@ font-family: 'Rozha One', serif;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   opacity: 0;
+  transition: .5s ease;
 }
-/* line 78, ../sass/_works.scss */
+/* line 86, ../sass/_works.scss */
 .tile img {
   opacity: 1;
-}
-
-/* line 83, ../sass/_works.scss */
-.tile > * {
   transition: .5s ease;
 }
 
-/* line 87, ../sass/_works.scss */
-.tile:hover p {
+/* line 94, ../sass/_works.scss */
+.tile:hover p, .tile:focus p, .tile:active p {
   opacity: 1;
 }
-
-/* line 91, ../sass/_works.scss */
-.tile:hover img {
+/* line 97, ../sass/_works.scss */
+.tile:hover img, .tile:focus img, .tile:active img {
   opacity: 0;
 }
 
 @media (max-width: 768px) {
-  /* line 102, ../sass/_works.scss */
+  /* line 111, ../sass/_works.scss */
   .tile {
     width: 325px;
     height: 325px;
@@ -286,54 +288,49 @@ font-family: 'Open Sans', sans-serif;
   width: 100vw;
   background-color: #2C4770;
 }
-/* line 24, ../sass/_case-study.scss */
-.study-container .center {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-}
 
-/* line 32, ../sass/_case-study.scss */
+/* line 26, ../sass/_case-study.scss */
 .study-content {
   margin: auto;
-  width: 550px;
+  max-width: 550px;
+  min-width: 300px;
 }
-/* line 37, ../sass/_case-study.scss */
+/* line 32, ../sass/_case-study.scss */
 .study-content h1 {
   font-size: 4.5em;
   color: #E6E6E6;
   font-family: 'Istok Web', sans-serif;
 }
-/* line 44, ../sass/_case-study.scss */
+/* line 39, ../sass/_case-study.scss */
 .study-content p {
   font-family: 'Palanquin', sans-serif;
   font-size: 1.66rem;
   font-weight: 200;
 }
-/* line 51, ../sass/_case-study.scss */
+/* line 46, ../sass/_case-study.scss */
 .study-content p.pronounce {
   color: #B1B1B1;
 }
-/* line 56, ../sass/_case-study.scss */
+/* line 51, ../sass/_case-study.scss */
 .study-content p.verb {
   color: #B1B1B1;
   font-style: italic;
 }
-/* line 62, ../sass/_case-study.scss */
+/* line 57, ../sass/_case-study.scss */
 .study-content .description {
   color: #E6E6E6;
 }
-/* line 67, ../sass/_case-study.scss */
+/* line 62, ../sass/_case-study.scss */
 .study-content p.description {
   position: relative;
 }
-/* line 72, ../sass/_case-study.scss */
+/* line 67, ../sass/_case-study.scss */
 .study-content span.description {
-  position: relative;
+  position: absolute;
   float: left;
   left: -25px;
 }
-/* line 79, ../sass/_case-study.scss */
+/* line 74, ../sass/_case-study.scss */
 .study-content .skills-header {
   margin-top: 25px;
   color: #B1B1B1;
@@ -341,11 +338,11 @@ font-family: 'Open Sans', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-/* line 87, ../sass/_case-study.scss */
+/* line 82, ../sass/_case-study.scss */
 .study-content .skills {
   padding-top: 10px;
 }
-/* line 90, ../sass/_case-study.scss */
+/* line 85, ../sass/_case-study.scss */
 .study-content .skills p {
   float: left;
   border-style: solid;
@@ -357,18 +354,18 @@ font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #B1B1B1;
 }
-/* line 104, ../sass/_case-study.scss */
+/* line 99, ../sass/_case-study.scss */
 .study-content .green {
   border-color: #92FF6E;
   border-width: 2px;
 }
-/* line 109, ../sass/_case-study.scss */
+/* line 104, ../sass/_case-study.scss */
 .study-content .blue {
   border-color: #32CFE0;
   border-width: 2px;
   min-width: 50px;
 }
-/* line 116, ../sass/_case-study.scss */
+/* line 111, ../sass/_case-study.scss */
 .study-content .orange {
   border-color: #DD9833;
   border-width: 2px;
@@ -376,18 +373,18 @@ font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 768px) {
-  /* line 128, ../sass/_case-study.scss */
-  .study-content {
-    top: -25%;
-    left: 10px;
-  }
-  /* line 134, ../sass/_case-study.scss */
+  /* line 126, ../sass/_case-study.scss */
   .study-content h1 {
     font-size: 2.75em;
   }
-  /* line 139, ../sass/_case-study.scss */
+  /* line 131, ../sass/_case-study.scss */
   .study-content p {
     font-size: 1.5rem;
+  }
+
+  /* line 136, ../sass/_case-study.scss */
+  .study-image {
+    margin: auto;
   }
 }
 /* line 1, ../sass/_blog.scss */
@@ -404,8 +401,6 @@ font-family: 'Open Sans', sans-serif;
   /* Set your own height: percents, ems, whatever! */
   width: 50%;
   /* Set your own width: percents, ems, whatever! */
-  overflow: auto;
-  /* Recommended in case content is larger than the container */
   margin: auto;
   /* Center the item vertically & horizontally */
   position: absolute;
@@ -417,37 +412,37 @@ font-family: 'Open Sans', sans-serif;
   /* Set the bounds in which to center it, relative to its parent/container */
 }
 
-/* line 21, ../sass/styles.scss */
+/* line 22, ../sass/styles.scss */
 .page {
   position: absolute;
 }
 
-/* line 26, ../sass/styles.scss */
+/* line 27, ../sass/styles.scss */
 .page-home {
   background-color: #E7E7E7;
   width: 100vw;
 }
 
-/* line 27, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 .page-contact {
   background-color: #66DF4C;
   height: 400vh;
   width: 100vw;
 }
 
-/* line 28, ../sass/styles.scss */
+/* line 29, ../sass/styles.scss */
 .page-about {
   background-color: #506AC0;
   height: 400vh;
   width: 100vw;
 }
 
-/* line 31, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 .nav {
   width: 100%;
   padding: 25px 25px 0px;
 }
-/* line 36, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 .nav ul > li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;

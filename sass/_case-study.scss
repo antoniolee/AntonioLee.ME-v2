@@ -20,18 +20,13 @@ font-family: 'Open Sans', sans-serif;
     height: 100vh;
     width: 100vw;
     background-color: #2C4770;
-
-    .center {
-        position: absolute;           
-        top: 50%;                         
-        transform: translate(0, -50%);   
-    }
 }
 
 // Home Page Content
 .study-content {   
     margin: auto;
-    width: 550px;
+    max-width: 550px;
+    min-width: 300px;
 
 // Header Settings
     h1 {
@@ -70,7 +65,7 @@ font-family: 'Open Sans', sans-serif;
 
 // the number description
     span.description {
-        position: relative;
+        position: absolute;
         float: left;
         left: -25px;
     }
@@ -125,20 +120,21 @@ font-family: 'Open Sans', sans-serif;
 
 @media (max-width: 768px) {
 
-.study-content {
+    .study-content {
 
-    top: -25%;
-    left: 10px;
+    // Header Settings
+        h1 {
+            font-size: 2.75em;
+        }
 
-// Header Settings
-    h1 {
-        font-size: 2.75em;
+    // Paragraph Settings 
+        p {
+            font-size: 1.5rem;
+        }    
     }
 
-// Paragraph Settings 
-    p {
-        font-size: 1.5rem;
-    }    
-}
+    .study-image {
+        margin: auto;
+    }
 }
 

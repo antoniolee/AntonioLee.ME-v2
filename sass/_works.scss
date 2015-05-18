@@ -13,6 +13,12 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Rozha One', serif;
 */
 
+@mixin hover-focus-active() {
+  &:hover,
+  &:focus,
+  &:active { @content }
+}
+
 
 // Works Page Container
 .works-container {
@@ -58,9 +64,10 @@ font-family: 'Rozha One', serif;
   margin: 20px;
   transition: .5s ease;
 
-    &:hover {
-        background-color: $blue;
-        transform: scale(1.03);
+    @include hover-focus-active {
+      background-color: $blue;
+      transform: scale(1.03);
+      transition: .5s ease;
     }
   
   p {
@@ -73,24 +80,26 @@ font-family: 'Rozha One', serif;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    transition: .5s ease;
   }
 
   img {
     opacity: 1;
+    transition: .5s ease;
   }
 }
 
-.tile > *{
-    transition: .5s ease;
+.tile {
+  &:hover, &:focus, &:active {
+    p {
+      opacity: 1;
+    }
+   img {
+      opacity: 0;
+    }
+  }
 }
 
-.tile:hover p {
-  opacity: 1;
-}
-
-.tile:hover img {
-  opacity: 0;
-}
 
 
 // Media Queries // Media Queries // Media Queries // Media Queries 
