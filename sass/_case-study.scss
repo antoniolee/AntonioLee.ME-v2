@@ -1,32 +1,21 @@
-// Colors
-$dark-gray: #1A1A1A;
-$light-gray: #B1B1B1;
-$white: #E6E6E6;
-$green: #92FF6E;
-$blue: #32CFE0;
-$orange: #DD9833;
-
-/* Fonts
-font-family: 'Palanquin', sans-serif;
-font-family: 'Istok Web', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/
-
-
 // Case Study Container
 .study-container {
-//    padding: 0;
- //   position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #2C4770;
+    padding: 0;
+    position: relative;
+
+    .row {
+        margin: 0;
+    }
+}
+
+// NWC Container 
+.nwc-container {
+    @extend .study-container;
+    background-color: $dark-pink;
 }
 
 // Home Page Content
 .study-content {   
-    margin: auto;
-    max-width: 550px;
-    min-width: 300px;
 
 // Header Settings
     h1 {
@@ -44,12 +33,12 @@ font-family: 'Open Sans', sans-serif;
 
 // pronounication spell out
     p.pronounce {
-        color: $light-gray;
+        color: $nwc-yellow;
     }
 
 // the descriptor (verb, noun, adj.)
     p.verb {
-        color: $light-gray;
+        color: $nwc-yellow;
         font-style: italic;
     }
 
@@ -73,13 +62,14 @@ font-family: 'Open Sans', sans-serif;
 // Skills, Tools, etc.
     .skills-header {
         margin-top:25px;
-        color: $light-gray;
+        color: $white;
         font-size: 14px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
     }
 
     .skills{
+        overflow: auto;
         padding-top: 10px;
 
         p {
@@ -91,27 +81,29 @@ font-family: 'Open Sans', sans-serif;
           font-size: 12px;
           font-family: 'Open Sans', sans-serif;
           font-weight: 300;
-          color: $light-gray;
+          color: $white;
         }
 
     }
 
-    .green {
-        border-color: $green;
+    .border { 
         border-width: 2px;
+        min-width: 50px;
+    }
+
+    .green {
+        @extend .border;
+        border-color: $green;
     }
 
     .blue {
+        @extend .border;
         border-color: $blue;
-        border-width: 2px;
-        min-width: 50px;
-
     }
 
     .orange {
+        @extend .border;
         border-color: $orange;
-        border-width: 2px;
-        min-width: 50px;
     }
 
 }

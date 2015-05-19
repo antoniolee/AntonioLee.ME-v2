@@ -1,25 +1,3 @@
-// Colors
-$dark-gray: #1A1A1A;
-$light-gray: #B1B1B1;
-$white: #E6E6E6;
-$green: #92FF6E;
-$blue: #32CFE0;
-$orange: #DD9833;
-
-/* Fonts
-font-family: 'Palanquin', sans-serif;
-font-family: 'Istok Web', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Rozha One', serif;
-*/
-
-@mixin hover-focus-active() {
-  &:hover,
-  &:focus,
-  &:active { @content }
-}
-
-
 // Works Page Container
 .works-container {
     position: relative;
