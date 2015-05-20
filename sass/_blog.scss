@@ -1,8 +1,10 @@
+// Blog container
 .blog-container {
-    @extend .home-container;
+    @extend .dict-container;
 
 }
 
 .blog-content {
-    @extend .home-content;
+    @extend .dict-content;
 }
+

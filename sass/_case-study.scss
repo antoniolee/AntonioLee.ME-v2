@@ -1,17 +1,10 @@
 // Case Study Container
 .study-container {
     padding: 0;
-    position: relative;
 
     .row {
         margin: 0;
     }
-}
-
-// NWC Container 
-.nwc-container {
-    @extend .study-container;
-    background-color: $dark-pink;
 }
 
 // Home Page Content
@@ -50,14 +43,15 @@
 // paragraph description
     p.description {
         position: relative;
+        width: 100%;
+        padding-left: 20px;
     }
 
 // the number description
     span.description {
-        position: absolute;
         float: left;
-        left: -25px;
     }
+
 
 // Skills, Tools, etc.
     .skills-header {
@@ -105,8 +99,37 @@
         @extend .border;
         border-color: $orange;
     }
-
 }
+
+
+
+// NWC Container 
+.nwc-container {
+    @extend .study-container;
+    background-color: $dark-pink;
+
+    .row {
+        margin: 0;
+    }
+}
+
+// NWC Container 
+.nwc-content {
+    @extend .study-content;
+
+    .col-lg-4 {
+        float: none;
+        position: relative;
+    }
+
+    .study-logo {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+}
+
+
 
 // Media Queries
 

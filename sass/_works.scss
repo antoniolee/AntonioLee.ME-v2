@@ -29,8 +29,8 @@
     }
 }
 
-// Works Content (row)
-.works-content {
+// Works Row 
+.works-row {
   text-align: center;
   padding: 0;
 }
@@ -83,8 +83,7 @@
 // Media Queries // Media Queries // Media Queries // Media Queries 
 // Media Queries // Media Queries // Media Queries // Media Queries
 
-
-@media (max-width: 768px) {
+@media (max-width: 1076px) {
 
     .tile {
         width: 325px;
