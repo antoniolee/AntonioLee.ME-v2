@@ -24,4 +24,19 @@
 	<div class="page {{pageClass}}" ng-view></div>
 </body>
 
+
+<script>
+
+document.onload = function (){
+	document.getElementByClassName("mobile-nav-btn").addEventListener("click", myFunction);
+};
+
+function myFunction() {
+    document.getElementByClassName("mobile-nav").style.visibility="visible";
+}
+
+
+</script
+
+
 </html>

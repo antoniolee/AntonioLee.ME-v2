@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 
-/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED   
+/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED  
 * {
    border: 1px solid red !important;
 }
@@ -49,7 +49,7 @@ $nwc-yellow: #F7E4B6;
     width: 100vw;
     $fontsize: 1.75rem;
     padding: 25px 25px 0px;
-
+    
     ul > li {
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
@@ -59,4 +59,38 @@ $nwc-yellow: #F7E4B6;
         color: $white;
     }
 }
+
+.mobile-nav-btn {
+  visibility: hidden;
+  width: 40px;
+  height: 40px;
+  background-color: $orange;
+}
+
+.mobile-nav {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    padding: 1rem 1rem 0;
+  }
+
+  .desktop-nav {
+    visibility: hidden;
+  }
+  
+  .mobile-nav-btn {
+    visibility: visible;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 50vh;
+    background-color: $green;
+  }
+}
+
 

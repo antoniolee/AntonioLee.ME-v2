@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 
-/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED   
+/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED  
 * {
    border: 1px solid red !important;
 }
@@ -259,11 +259,18 @@
   opacity: 0;
 }
 
-@media (max-width: 1076px) {
+@media (max-width: 960px) {
   /* line 88, ../sass/_works.scss */
   .tile {
-    width: 325px;
-    height: 325px;
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 97, ../sass/_works.scss */
+  .tile {
+    width: 250px;
+    height: 250px;
   }
 }
 /* line 2, ../sass/_case-study.scss */
@@ -428,4 +435,43 @@
   font-size: 1.75rem;
   margin-left: 3rem;
   color: #E6E6E6;
+}
+
+/* line 63, ../sass/styles.scss */
+.mobile-nav-btn {
+  visibility: hidden;
+  width: 40px;
+  height: 40px;
+  background-color: #DD9833;
+}
+
+/* line 70, ../sass/styles.scss */
+.mobile-nav {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 75, ../sass/styles.scss */
+  .nav {
+    padding: 1rem 1rem 0;
+  }
+
+  /* line 79, ../sass/styles.scss */
+  .desktop-nav {
+    visibility: hidden;
+  }
+
+  /* line 83, ../sass/styles.scss */
+  .mobile-nav-btn {
+    visibility: visible;
+  }
+
+  /* line 87, ../sass/styles.scss */
+  .mobile-nav {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 50vh;
+    background-color: #92FF6E;
+  }
 }

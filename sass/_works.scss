@@ -68,7 +68,7 @@
 }
 
 .tile {
-  &:hover, &:focus, &:active {
+  @include hover-focus-active {
     p {
       opacity: 1;
     }
@@ -83,11 +83,20 @@
 // Media Queries // Media Queries // Media Queries // Media Queries 
 // Media Queries // Media Queries // Media Queries // Media Queries
 
-@media (max-width: 1076px) {
+@media (max-width: 960px) {
 
     .tile {
-        width: 325px;
-        height: 325px;
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .tile {
+        width: 250px;
+        height: 250px;
     }
 
 }
