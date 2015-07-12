@@ -34,10 +34,16 @@ antonioApp.config(function($routeProvider /*$locationProvider*/) {
             controller: 'blogController'
         })
 
+        // Contact
+        .when('/contact', {
+            templateUrl: 'views/contact.html',
+            controller: 'contactController'
+        })
+
         // case-study-template
         .when('/nwc', {
             templateUrl: 'views/nwc.html',
-            controller: 'caseStudyController'
+            controller: 'nwcController'
         });
 
    // $locationProvider.html5Mode(true);        
@@ -65,8 +71,14 @@ antonioApp.controller('blogController', function($scope) {
     $scope.pageClass = 'page-blog';
 });
 
-// case study page controller
-antonioApp.controller('caseStudyController', function($scope) {
-    $scope.pageClass = 'page-caseStudyController';
+// contact page controller
+antonioApp.controller('contactController', function($scope) {
+    $scope.pageClass = 'page-contact';
+});
+
+
+// nwc page controller
+antonioApp.controller('nwcController', function($scope) {
+    $scope.pageClass = 'page-nwc';
 });
 
